@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="This is a currency converter application that supports multiple countries currency values."
+        />
+        <meta name="author" content="Debi Prasad Mishra" />
+        <meta
+            name="keywords"
+            content="Currency converter, currency, money, dollar to rupee, rupee to dollar"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous"
+        ></script>
+
+        <script defer src="script.js"></script>
+        <title>Currency Converter</title>
+    </head>
+    <body class="text-center container mt-5">
+        <h1>Welcome to Currency Exchange</h1>
+        <hr />
+
+        <div class="text-center">
+            <div class="from--section">
+                <span class="text-uppercase">From: </span>
+                <select name="toConvert" id="from" class="">
+                    <option value="INR">INR ₹</option>
+                    <option value="USD">Dollar $</option>
+                    <option value="GBP">Pound £</option>
+                    <option value="EUR">EURO €</option>
+                    <option value="BDT">Taka ৳</option>
+                    <option value="CLP">Chilean Peso</option>
+                    <option value="CNY">Yuan Renminbi</option>
+                    <option value="COP">Colombian Peso</option>
+                    <option value="AUD">Australian Dollar</option>
+                    <option value="IDR">Rupiah</option>
+                    <option value="IQD">Iraqi Dinar</option>
+                    <option value="JPY">Yen</option>
+                    <option value="MUR">Mauritius Rupee</option>
+                    <option value="MXN">Mexican Peso</option>
+                    <option value="PLN">Zloty</option>
+                    <option value="QAR">Qatari Rial</option>
+                    <option value="SAR">Saudi Riyal</option>
+                    <option value="LKR">Sri Lanka Rupee</option>
+                    <option value="AED">UAE Dirham</option>
+                    <option value="KWD">Kuwaiti Dinar</option>
+                </select>
+
+                <input
+                    type="text"
+                    class="input-currency text-center"
+                    autofocus
+                />
+            </div>
+
+            <div class="to--section">
+                <span class="text-uppercase">To: </span>
+                <select name="output" id="to" class="">
+                    <option value="USD">Dollar $</option>
+                    <option value="INR">INR ₹</option>
+                    <option value="GBP">Pound £</option>
+                    <option value="EUR">EURO €</option>
+                    <option value="BDT">Taka ৳</option>
+                    <option value="CLP">Chilean Peso</option>
+                    <option value="CNY">Yuan Renminbi</option>
+                    <option value="COP">Colombian Peso</option>
+                    <option value="AUD">Australian Dollar</option>
+                    <option value="IDR">Rupiah</option>
+                    <option value="IQD">Iraqi Dinar</option>
+                    <option value="JPY">Yen</option>
+                    <option value="MUR">Mauritius Rupee</option>
+                    <option value="MXN">Mexican Peso</option>
+                    <option value="PLN">Zloty</option>
+                    <option value="QAR">Qatari Rial</option>
+                    <option value="SAR">Saudi Riyal</option>
+                    <option value="LKR">Sri Lanka Rupee</option>
+                    <option value="AED">UAE Dirham</option>
+                    <option value="KWD">Kuwaiti Dinar</option>
+                </select>
+
+                <input
+                    type="text"
+                    class="output-currency text-center"
+                    readonly
+                />
+            </div>
+        </div>
+
+        <div class="data">
+            <div>
+                <p class="bg-info text-capitalize">
+                    Exchange Rate: <span class="rate text-black"></span>
+                </p>
+            </div>
+
+            <!-- <div class="hidden message"> -->
+            <div
+                class="
+                    hidden
+                    message
+                    bg-warning
+                    text-decoration-underline text-black
+                "
+            >
+                <p>Please enter numbers only.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p class="">
+                &copy; Copyright by
+                <a
+                    class="text-secondary"
+                    target="_blank"
+                    href="https://debiprasadmishra.net"
+                    >Debi Prasad Mishra</a
+                >
+            </p>
+        </footer>
+    </body>
+</html>

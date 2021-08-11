@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: #444;
+    background-color: #ececec;
+}
+
+h1 {
+    font-weight: 600;
+    background: linear-gradient(to top left, #39b385, #9be15d);
+    color: #444;
+}
+
+select {
+    background: linear-gradient(to top left, #54d385, #99dfbe);
+    color: #222121;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1em;
+    font-weight: 500;
+    height: 2em;
+}
+
+input {
+    height: 2em;
+}
+
+div.data {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.container {
+    border: 1px solid #000;
+    padding-top: 1em;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.from--section,
+.to--section {
+    width: 50%;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding: 1em 0 1em 0;
+    border: 1px solid rgb(82, 81, 81);
+}
+
+.from--section {
+    float: left;
+}
+
+.to--section {
+    /* position: relative; */
+    /* top: -102px; */
+    /* left: 50%; */
+    /* display: inline; */
+    float: right;
+}
+
+@media only screen and (max-width: 1000px) {
+    .from--section,
+    .to--section {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .to--section {
+        margin-bottom: 2em;
+    }
+    select {
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    input {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .from--section,
+    .to--section {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .to--section {
+        margin-bottom: 2em;
+    }
+    select {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .from--section,
+    .to--section {
+        float: none;
+        margin: auto;
+    }
+
+    .to--section {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    input {
+        margin-top: 10px;
+        width: 90%;
+    }
+
+    select {
+        width: 90%;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    .container {
+        border: none;
+    }
+}
